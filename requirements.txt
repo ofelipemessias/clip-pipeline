@@ -1,0 +1,4 @@
+faster-whisper>=1.0
+yt-dlp>=2024.1
+anthropic>=0.39
+pytest>=8.0
