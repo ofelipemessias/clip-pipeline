@@ -45,7 +45,7 @@ Opções: `--count` (quantidade de clipes), `--min-len`/`--max-len` (duração e
 
 ```bash
 pip install -e ".[dev]"
-PYTHONPATH=src pytest tests/ -q
+pytest -q
 ```
 
 10 testes cobrem a seleção de momentos (heurística e parsing da resposta do LLM) e o corte real com ffmpeg (duração, resolução 1080x1920 e legenda rebaseada), usando um vídeo sintético gerado na hora. Além da suíte, o fluxo completo foi executado de ponta a ponta em um vídeo real de 44 s: transcrição, seleção dos 3 momentos e geração dos clipes verticais legendados.
